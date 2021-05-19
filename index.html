@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="style.css">
     <style>
         #section1 {
-          height: calc(100vh - 57px);
+          width: 100vw;
           top: 150px;
-          padding-left: 90px;
-          background: url('./img/dm98fhoPgzbjittCqEEZcC.png');
+          height: calc(100vh - 57px);
+          background: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
           background-repeat: no-repeat;
           background-size: contain;
           opacity: 1; 
         }
         body {
             padding: 0;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
         }
         .header {
             top: 0px;
@@ -40,6 +42,10 @@
           text-transform: capitalize;
           opacity: 1;
         }
+        .navbar-collapse {
+          background-color: white;
+          z-index: 1;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -50,7 +56,8 @@
           <img src="./img/unnamed.png" alt="" style="height: 100%;width: 90px;">
         </a>
         <button class="navbar-toggler btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <!--span class="navbar-toggler-icon"></span-->
+          Menu
         </button>
         <div class="collapse navbar-collapse justify-content-between pe-auto" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -79,39 +86,51 @@
       </div>
     </nav>
   </header>
-    <div class="col-12 bg-white border " id="section1">
-      <!--div class="hero-wrapper"-->
-        <div class="hero-copy-container pl-lg-5">
-          
-          <h3 class="hero-copy">Promote Individual Learning Culture In Your Organization</h3>
-          <!--div class="hero-form">
-            <input type="text" class="hero-form-input" placeholder="Your email here">
-            <button class="hero-form-button">Get started</button>
-          </div-->
-        </div>
-        <!--div class="hero-image">
-          <img src="https://assets.codepen.io/845908/12+Devices.png" alt="">
-        </div-->
-      <!--/div-->
-      <!--div class="hero-promo">
-        <div class="hero-feature-container">
-          <div class="hero-feature-image">
-            <i class="fa fa-star"></i>
-          </div>
-          <div class="hero-feature-copy">We are featured in</div>
-        </div>
-        <ul class="hero-promo-ul">
-          <li class="hero-promo-items">
-            <i class="fab fa-google"></i></li>
-          <li class="hero-promo-items">
-            <i class="fab fa-twitter"></i></li>
-          <li class="hero-promo-items">
-            <i class="fab fa-facebook"></i></li>
-          <li class="hero-promo-items">
-            <i class="fab fa-instagram"></i></li>
-        </ul>
-      </div-->
+  <section id="section1" class="row col-12 bg-white p-lg-5 p-2 h-md-60 h-lg-75 h-70">
+    <div class="col-4 col-lg-3 col-md-3 ms-md-5 ms-lg-5 right-side-hero mt-lg-0">
+      <h1 class="hero-title">Promote Individual Learning Culture In Your Organization.</h1>
+
+      <p class="font-weight-normal mt-4" style="color: black;font-size: 12px;">......allow employess learn at their own pace</p>
     </div>
+    <div class="col-6 col-lg-6 col-md-7 resize">
+      <div class="form d-flex justify-content-center row py-3 px-1">
+        <h6 class="text-uppercase text-white text-bold text-center form-header">See demo</h6>
+        <form class="">
+          <div class="mb-1 mb-lg-3">
+            <input type="text" class="form-control" placeholder="First Name">
+          </div>
+          <div class="mb-1 mb-lg-3">
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="mb-1 mb-lg-3">
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-1 mb-lg-3">
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-1 mb-lg-3">
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-1 mb-lg-3">
+            <input type="text" class="form-control">
+          </div>
+        </form>
+        <div class="submit mb-1 mb-lg-3 text-bold rounded btn btn-sm col-9" style="height: 45px;">
+          <button class="btn btn-sm">
+            See Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light border" id="section2">
+
+  </section>
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("readystatechange", () => {
+        console.log(window.innerHeight);
+      })
+    </script>
 </body>
 </html>
