@@ -186,6 +186,34 @@ input{
   height: 1.8rem;
   line-height: 80%;
 }
+
+@media (min-width: 100px) {
+  .form{
+    max-width: 240px;
+    height: auto;
+    margin-left: 42px;
+    margin-top: 24px;
+    background: #9B9B9B 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.84;
+  }
+  .right-side-hero{
+    margin-top: 0px;
+    margin-left: 24px;
+  }
+  .resize{
+    height: 360px;
+    margin-left: 27px;
+  }
+  #section2 {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: -420px;
+    left: 0px;
+    width: 100vw;
+    height: 450px;
+  }
+}
 @media (min-width: 500px) {
   .form{
     max-width: 240px;
