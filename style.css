@@ -198,14 +198,14 @@ input{
     opacity: 0.84;
   }
   #section1 {
-    width: 100vw;
+    width: 90vw;
     top: 150px;
     height: calc(100vh - 57px);
     background: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 1;
-    border: 1px solid black; 
+    padding: 0;
   }
   .right-side-hero{
     margin-top: 0px;
