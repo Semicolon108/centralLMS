@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         #section1 {
-          width: 100vw;
-          top: 150px;
           height: calc(100vh - 57px);
-          background: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
+          background-image: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
           background-repeat: no-repeat;
           background-size: contain;
           opacity: 1;
-          border: 1px solid black; 
         }
         body {
             padding: 0;
@@ -26,7 +25,7 @@
         .header {
             top: 0px;
             left: 0px;
-            height: 60px;
+            height: 90px;
             background: #FFFFFF 0% 0% no-repeat padding-box;
             background-size: contain;
             opacity: 1;
@@ -91,21 +90,24 @@
   <section id="section1" class="row col-12 bg-white p-lg-5 p-2 h-md-60 h-lg-75 h-70">
     <div class="col-12 col-lg-4 col-md-3 ms-md-5 ms-lg-5">
       <div class="col-4 col-lg-3 col-md-3 ms-md-5 ms-lg-5 right-side-hero mt-lg-0 mt-4">
-        <h1 class="hero-title">Promote Individual Learning Culture In Your Organization.</h1>
+        <h1 class="hero-title"></h1>
       </div>
-      <div class="col-12 col-lg-12 col-md-3 mt-5 mt-lg-0 mb-md-5 ms-5 text-center">
-        <p class="font-weight-bold mt-5" style="color: black;font-size: 15px;">......allow employess learn at their own pace.</p>
+      <div class="col-12 col-lg-12 col-md-3 mt-5 mt-lg-0 mb-md-5 ms-2 span text-center">
+        <p class="font-weight-bold mt-1 mt-lg-5 mt-md-5 text-muted" style="font-size: 16px;"></p>
       </div>
     </div>
     <div class="col-12 col-lg-5 col-md-7 resize">
-      <div class="form d-flex justify-content-center row py-3 px-1 mx-auto">
+      <div class="form d-flex justify-content-center row py-3 px-1 mx-auto" data-aos="zoom-in" data-aos-delay="90"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <h6 class="text-uppercase text-white text-bold text-center form-header">See demo</h6>
         <form class="">
           <div class="mb-1 mb-lg-3">
             <input type="text" class="form-control" placeholder="First Name">
           </div>
           <div class="mb-1 mb-lg-3">
-            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="Last Name">
           </div>
           <div class="mb-1 mb-lg-3">
             <input type="text" class="form-control">
@@ -131,11 +133,34 @@
   <section class="bg-light" id="section2">
 
   </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
-      document.addEventListener("readystatechange", () => {
-        console.log(window.innerHeight);
-      })
+      AOS.init();
+      $(function(){
+        $(".hero-title").typed({
+          strings: ["Promote Individual Learning Culture In Your Organization. "],
+          typeSpeed: 0,
+          showCursor: false,
+          callback: () => {
+            showThis();
+          }
+        });
+        function showThis(){
+
+          $(".span p").typed({
+              strings: ["...allow employess learn at their own pace."],
+              backDelay: 60,    
+              typeSpeed: 30,
+              showCursor:false,
+              backSpeed: 45,
+              loop: true, 
+          });
+
+        }
+      });
     </script>
 </body>
 </html>
