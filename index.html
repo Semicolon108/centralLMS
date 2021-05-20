@@ -12,7 +12,7 @@
     <style>
         #section1 {
           height: calc(100vh - 57px);
-          background-image: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
+          background: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
           background-repeat: no-repeat;
           background-size: contain;
           opacity: 1;
@@ -56,9 +56,8 @@
         <a class="navbar-brand ms-3" href="#">
           <img src="./img/unnamed.png" alt="" style="height: 100%;width: 90px;">
         </a>
-        <button class="navbar-toggler btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <!--span class="navbar-toggler-icon"></span-->
-          Menu
+        <button class="navbar-toggler btn btn-sm me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between pe-auto" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -88,19 +87,19 @@
     </nav>
   </header>
   <section id="section1" class="row col-12 bg-white p-lg-5 p-2 h-md-60 h-lg-75 h-70">
-    <div class="col-12 col-lg-4 col-md-3 ms-md-5 ms-lg-5">
-      <div class="col-4 col-lg-3 col-md-3 ms-md-5 ms-lg-5 right-side-hero mt-lg-0 mt-4">
+    <div class="col-12 col-lg-4 col-md-4 ms-md-5 ms-lg-5">
+      <div class="col-4 col-lg-6 col-md-7 ms-md-1 ms-lg-5 right-side-hero mt-lg-0 mt-4">
         <h1 class="hero-title"></h1>
       </div>
-      <div class="col-12 col-lg-12 col-md-3 ms-2 span text-center">
+      <!--div class="col-12 col-lg-12 col-md-3 ms-2 span text-center">
         <p class="font-weight-bold mt-1 mt-lg-5 mt-md-5 text-muted" style="font-size: 16px;"></p>
-      </div>
+      </div-->
     </div>
-    <div class="col-12 col-lg-5 col-md-7 resize">
+    <div class="col-12 col-lg-5 col-md-4 resize">
       <div class="form d-flex justify-content-center row py-3 px-1 mx-auto" data-aos="zoom-in" data-aos-delay="90"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
-      data-aos-once="false">
+      data-aos-once="true">
         <h6 class="text-uppercase text-white text-bold text-center form-header">See demo</h6>
         <form class="">
           <div class="mb-1 mb-lg-3">
@@ -138,17 +137,17 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
+      document.addEventListener("readystatechange", () => {
+        console.log(window.innerWidth);
+      })
       AOS.init();
       $(function(){
         $(".hero-title").typed({
           strings: ["Promote Individual Learning Culture In Your Organization. "],
-          typeSpeed: 0,
-          showCursor: false,
-          callback: () => {
-            showThis();
-          }
+          typeSpeed: 45,
+          showCursor: false
         });
-        function showThis(){
+        /*function showThis(){
 
           $(".span p").typed({
               strings: ["...allow employess learn at their own pace."],
@@ -159,7 +158,7 @@
               loop: true, 
           });
 
-        }
+        }*/
       });
     </script>
 </body>
