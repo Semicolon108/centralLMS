@@ -197,6 +197,16 @@ input{
     border-radius: 10px;
     opacity: 0.84;
   }
+  #section1 {
+    width: 110vw;
+    top: 150px;
+    height: calc(100vh - 57px);
+    background: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    border: 1px solid black; 
+  }
   .right-side-hero{
     margin-top: 0px;
     margin-left: 24px;
