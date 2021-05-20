@@ -193,7 +193,10 @@ input{
   line-height: 80%;
 }
 
-@media (min-width: 100px) {
+@media (max-width: 100px) {
+  body{
+    overflow-x: hidden;
+  }
   .form{
     max-width: 240px;
     height: auto;
@@ -212,6 +215,9 @@ input{
     height: 360px;
     margin-left: 27px;
   }
+  .span{
+    margin-top: 45px
+  }
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -221,7 +227,7 @@ input{
     height: 450px;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 500px) {
   .form{
     max-width: 240px;
     height: auto;
@@ -230,6 +236,9 @@ input{
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.84;
+  }
+  .span{
+    margin-top: -90px;
   }
   .right-side-hero{
     margin-top: 0px;
@@ -245,6 +254,7 @@ input{
     left: 0px;
     width: 100vw;
     height: 450px;
+ 
   }
 }
 
