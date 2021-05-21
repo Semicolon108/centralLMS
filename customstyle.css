@@ -1,0 +1,100 @@
+@import url('./css/bootstrap.min.css');
+@import url('css/classy-nav.css');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header-area {
+    position: relative;
+    z-index: 1000;
+    width: 100%; }
+    .header-area .famie-main-menu {
+      position: relative;
+      width: 100%; }
+      .header-area .famie-main-menu .classy-nav-container {
+        position: relative;
+        z-index: 1; }
+        .header-area .famie-main-menu .classy-nav-container .container {
+          position: relative;
+          z-index: 1; }
+      .header-area .famie-main-menu .classy-navbar {
+        padding: 0;
+        height: 80px; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .header-area .famie-main-menu .classy-navbar {
+            height: 70px; } }
+        @media only screen and (max-width: 767px) {
+          .header-area .famie-main-menu .classy-navbar {
+            height: 70px; } }
+        .header-area .famie-main-menu .classy-navbar .nav-brand {
+          max-width: 150px; }
+          @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .header-area .famie-main-menu .classy-navbar .nav-brand {
+              max-width: 120px; } }
+          @media only screen and (max-width: 767px) {
+            .header-area .famie-main-menu .classy-navbar .nav-brand {
+              max-width: 110px; } }
+        .header-area .famie-main-menu .classy-navbar .classynav ul li a {
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #303030; }
+          .header-area .famie-main-menu .classy-navbar .classynav ul li a:focus, .header-area .famie-main-menu .classy-navbar .classynav ul li a:hover {
+            color: #77b122; }
+        .header-area .famie-main-menu .classy-navbar .classynav ul li ul li a {
+          text-transform: capitalize;
+          padding: 0 20px;
+          font-size: 14px;
+          color: #0f1112;
+          line-height: 34px;
+          height: 35px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .header-area .famie-main-menu .classy-navbar .classynav ul li ul li a {
+              color: #707070; } }
+          @media only screen and (max-width: 767px) {
+            .header-area .famie-main-menu .classy-navbar .classynav ul li ul li a {
+              color: #707070; } }
+          .header-area .famie-main-menu .classy-navbar .classynav ul li ul li a::after {
+            color: #0f1112; }
+          .header-area .famie-main-menu .classy-navbar .classynav ul li ul li a:focus, .header-area .famie-main-menu .classy-navbar .classynav ul li ul li a:hover {
+            color: #77b122; }
+        .header-area .famie-main-menu .classy-navbar .classynav ul li.active a {
+          color: #77b122; }
+    .header-area .is-sticky .famie-main-menu {
+      z-index: 9999;
+      box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2); }
+    .header-area #searchIcon {
+      position: relative;
+      z-index: 1;
+      color: #303030;
+      margin: 0 25px;
+      cursor: pointer;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+      display: inline-block; }
+      .header-area #searchIcon:focus, .header-area #searchIcon:hover {
+        color: #77b122; }
+    .header-area #cartIcon {
+      position: relative;
+      z-index: 1;
+      display: inline-block; }
+      .header-area #cartIcon a {
+        display: inline-block;
+        font-size: 18px; }
+        .header-area #cartIcon a span {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          z-index: 9;
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #77b122;
+          color: #ffffff;
+          font-size: 10px;
+          text-align: center;
+          line-height: 15px; }
