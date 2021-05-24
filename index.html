@@ -34,7 +34,7 @@
         }
         .nav-item{
           width: 120px;
-          height: 80%;
+          height: 100%;
           text-align: left;
           font: normal normal 600 15px/18px Open Sans;
           color: #000000 !important;
@@ -45,46 +45,31 @@
           background-color: white;
           z-index: 1;
         }
+        h6 {
+          font-size: 12px !important;
+          font-weight: bolder;
+        }
+        hr {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          border: 0;
+          border-top: 2.7px solid #4D6303;
+        }
+        .list-group-item{
+          background-color: #F5F5F5 !important;
+          width: 60%;
+        }
+        .list-group .active{
+          box-shadow: 0px 3px 20px #00000073;
+          border: 1px solid #707070;
+          border-radius: 42px;
+          opacity: 1;
+          background-color: #4D6303 !important;
+        }
+
     </style>
 </head>
 <body class="bg-light">
-  <!--header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="#">
-          <img src="./img/unnamed.png" alt="" style="height: 100%;width: 90px;">
-        </a>
-        <button class="navbar-toggler btn btn-sm me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between pe-auto" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item text-lg-center">
-              <a class="nav-link active my-auto" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item text-lg-center">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown text-lg-center">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Our solution
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item text-lg-center">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header-->
-
   <header class="header-area">
     <!-- Top Header Area -->
 
@@ -172,23 +157,100 @@
   </section>
   <section class="bg-light py-5" id="section2">
     <div class="container h-auto mx-auto mt-5 py-3 row px-4">
-        <div class="card mb-3 border-0 bg-light mt-3" style="max-width: 100%;">
+        <div class="card border-0 mb-3 bg-light mt-3 h-75" style="max-width: 100%;">
           <div class="row g-0">
             <div class="col-md-12 col-12 col-lg-7">
               <div class="card-body">
-                <h3 class="card-title">Central Learning Management System</h3>
+                <h3 class="card-title font-weight-bold">Central Learning Management System</h3>
                 <p class="card-text">Give your learners on-the-go access to training, assessments and other corperate information anywhere, anytime on mobile devices.</p>
-                <br><br>
+                <br>
                 <p class="card-text">Central Mobile App is integerated with the web-based Central LMS. All training activities conducted on mobile devices are synchronized with the LMS.This means Learners can start a training on the LMS and complete it the mobile app and vice versa.</p>
-                <br />
                 <p class="card-text">Central Mobile App Supports Android and iOS Platform</p>
               </div>
             </div>
-            <div class="col-md-12 col-12 col-lg-5 h-100 d-flex justify-content-center align-items-center" style="background: transparent url('img/Depositphotos_69202269_l-2015.png') 0% 0% no-repeat padding-box;">
+            <div class="col-md-12 col-12 col-lg-5 d-flex justify-content-center align-items-center" style="background: transparent url('img/Depositphotos_69202269_l-2015.png') 0% 0% no-repeat padding-box;">
               <span class="rounded-circle" style="background: transparent url('img/youtube (1).png') 0% 0% no-repeat padding-box;opacity: 1;height:150px;width:150px"></span>
             </div>
           </div>
         </div>
+    </div>
+  </section>
+  <section class="mt-5" style="background-color: #F9F9F9;">
+    <div class="container bg-white row mx-auto gx-3 gx-lg-5 gy-3 gy-md-3 px-lg-5 d-flex justify-content-center py-3" style="width:80%;height:auto">
+      <h6 class="text-center">There's So Much You Can Do With Central LMS</h6>
+      <div class="col-6 col-lg-2 col-md-4">
+        <div class="card border-0" style="width: 100%;font-size: 13px;">
+          <div class="card-body px-0" >
+            <h6 class="card-title">Reduce Training Cost</h6>
+            <p class="card-text"style="font-size: 14px;">Cost of print media,Training Instructors, Facilities,Transportaion, Accomodation etc.</p>
+          </div>
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+            <img src="img/reduce-training.png" alt="..." style="height: 90%; width: 60%;">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 col-md-4" >
+        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+            <img src="img/kodek-innovation-conduct-test.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+          </div>
+          <div class="card-body px-0">
+            <h6 class="card-title">Conduct test for prospective hires</h6>
+            <p class="card-text">Do more than just training,use central LMS to conduct training for job applicants during recruitment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 col-md-4" >
+        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+          <div class="card-body px-0">
+            <h6 class="card-title">Improve employee's effectiveness</h6>
+            <p class="card-text">Enhance the integeration of employees to become effective members of the organization.</p>
+          </div>
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+            <img src="img/onboard-new.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 col-md-4" >
+        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+            <img src="img/smarter.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+          </div>
+          <div class="card-body px-0">
+            <h6 class="card-title">Smarter, well-informed workforce</h6>
+            <p class="card-text">Achieve a knowledgable workforce by making training available at all times.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 col-md-4" >
+        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+          <div class="card-body px-0">
+            <h6 class="card-title">Increase revenue</h6>
+            <p class="card-text">Better trained employees sell more and quicker.</p>
+          </div>
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+            <img src="img/kodek-innovations-increase-revenue.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section  style="background-color: #F5F5F5;width:100vw;height:auto">
+    <div class="container mt-5 row mx-auto">
+      <h3 class="font-weight-bold">Features</h3>
+      <hr>
+      <div class="col-4">
+        <ul class="list-group ">
+          <li class="list-group-item border-0 active">Course Management</li>
+          <li class="list-group-item border-0">Learning delivery</li>
+          <li class="list-group-item border-0">Enterprise ready</li>
+          <li class="list-group-item border-0">Ecommerce</li>
+          <li class="list-group-item border-0">Technology</li>
+        </ul>
+      </div>
+      <div class="col-8">
+
+      </div>
     </div>
   </section>
   <script src="js/jquery.min.js"></script>
