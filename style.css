@@ -228,7 +228,7 @@ input{
     margin-top: -90px;
     left: 0px;
     width: 100vw;
-    height: 450px;
+    height: auto;
   }
 }
 @media (min-width: 500px) {
@@ -259,7 +259,7 @@ input{
     opacity: 1;
     left: 0px;
     width: 100vw;
-    height: 420px;
+    height: auto;
   }
 }
 
@@ -290,7 +290,7 @@ input{
   .form{
     margin-left: 180px;
     max-width: 390px;
-    margin-top: 90px;
+    margin-top: -9px;
     height: 330px;
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
@@ -304,47 +304,21 @@ input{
     height: 330px;
     
   }
-}
-
-@media (min-width: 702px) {
-  .form{
-    margin-left: 150px;
-    margin-top: 120px;
-    width: 330px;
-    height: auto;
-    background: #9B9B9B 0% 0% no-repeat padding-box;
-    border-radius: 10px;
-    opacity: 0.84;
-  }
-  .resize{
-    height: 390px;
-  }
-  .right-side-hero{
-    margin-top:30px;
-    height: 240px;
-  }
-  .right-side-hero h1{
-    font-size: 2.1rem;
-  }
-  form{
-    margin-top: 0px !important;
-  }
-  .span{
-    margin-top: 240px;
-  }
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: 450px;
+    margin-top: -90px;
     left: 0px;
     width: 100vw;
     height: 450px;
   }
 }
-@media (min-width: 779px) {
+
+
+@media (min-width: 702px) {
   .form{
     margin-left: 150px;
-    margin-top: 90px;
+    margin-top: 20px;
     width: 330px;
     height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
@@ -353,12 +327,13 @@ input{
   }
   .resize{
     height: 390px;
-    margin-left: 150px;
+    margin-left: 20px;
   }
   .right-side-hero{
     margin-top:30px;
     height: 240px;
   }
+  
   .right-side-hero h1{
     font-size: 2.1rem;
   }
@@ -371,7 +346,8 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -270px;
+    margin-top: 0px;
+
     left: 0px;
     width: 100vw;
     height: 450px;
@@ -381,9 +357,9 @@ input{
 @media (min-width: 1200px) {
   .form{
     margin-left: 300px;
-    margin-top: 90px;
+    margin-top: 240px;
     width: 540px;
-    height: 420px;
+    height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.84;
@@ -400,7 +376,7 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -240px;
+    margin-top: 0px;
     left: 0px;
     width: 100vw;
     height: 450px;
