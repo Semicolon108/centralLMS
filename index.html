@@ -10,8 +10,7 @@
     <style>
         #section1 {
           height: calc(100vh - 57px);
-          background: url('./img/dm98fhoPgzbjittCqEEZcC@2x.png');
-          background-repeat: no-repeat;
+          background: transparent url('img/dm98fhoPgzbjittCqEEZcC.png') 0% 0% no-repeat padding-box;
           background-size: contain;
           opacity: 1;
         }
@@ -67,6 +66,11 @@
           background-color: #4D6303 !important;
         }
 
+        .info-header{
+          font-weight: bolder;
+          font-size: 27px;
+        }
+        .btn:focus, .btn:active:focus, .btn.active:focus { outline: none; ! important; outline-style: none; }
     </style>
 </head>
 <body class="bg-light">
@@ -95,13 +99,7 @@
                         <div class="classynav">
                             <ul>
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Our solution</a>
-                                  <ul class="dropdown">
-                                      <li><a href="farmkart.php">Invest</a></li>
-                                      <li><a href="partners.php">Become a partner</a></li>
-                                  </ul>
-                                </li>
+                                
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
@@ -113,20 +111,20 @@
     </div>
 </header>
   <section id="section1" class="row col-12 bg-white p-lg-5 p-2 h-md-60 h-lg-75 h-70">
-    <div class="col-12 col-lg-4 col-md-4 ms-md-5 ms-lg-5">
-      <div class="col-4 col-lg-6 col-md-7 ms-md-1 ms-lg-5 right-side-hero mt-lg-0 mt-4">
+    <div class="col-6 col-lg-4 col-md-4 ms-md-5 ms-lg-5 right-side-hero">
+      <!--div class="col-6 border col-lg-6 col-md-7 ms-md-1 ms-lg-5 right-side-hero mt-lg-0 mt-4"-->
         <h1 class="hero-title"></h1>
-      </div>
-      <!--div class="col-12 col-lg-12 col-md-3 ms-2 span text-center">
+      <!--/div-->
+      <div class="col-12 col-lg-12 col-md-3 ms-2 span text-center">
         <p class="font-weight-bold mt-1 mt-lg-5 mt-md-5 text-muted" style="font-size: 16px;"></p>
-      </div-->
+      </div>
     </div>
     <div class="col-12 col-lg-5 col-md-4 resize">
       <div class="form d-flex justify-content-center row py-3 px-1 mx-auto" data-aos="zoom-in" data-aos-delay="90"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
       data-aos-once="true">
-        <h6 class="text-uppercase text-white text-bold text-center form-header">See demo</h6>
+        <h4 class= "text-white font-weight-bold text-center form-header">Request demo</h4>
         <form class="">
           <div class="mb-1 mb-lg-3">
             <input type="text" class="form-control" placeholder="First Name">
@@ -161,7 +159,7 @@
           <div class="row g-0">
             <div class="col-md-12 col-12 col-lg-7">
               <div class="card-body">
-                <h3 class="card-title font-weight-bold">Central Learning Management System</h3>
+                <h3 class="info-header mb-5 font-weight-bold">Central Learning Management System</h3>
                 <p class="card-text">Give your learners on-the-go access to training, assessments and other corperate information anywhere, anytime on mobile devices.</p>
                 <br>
                 <p class="card-text">Central Mobile App is integerated with the web-based Central LMS. All training activities conducted on mobile devices are synchronized with the LMS.This means Learners can start a training on the LMS and complete it the mobile app and vice versa.</p>
@@ -176,22 +174,22 @@
     </div>
   </section>
   <section class="mt-5" style="background-color: #F9F9F9;">
-    <div class="container bg-white row mx-auto gx-3 gx-lg-5 gy-3 gy-md-3 px-lg-5 d-flex justify-content-center py-3" style="width:80%;height:auto">
-      <h6 class="text-center">There's So Much You Can Do With Central LMS</h6>
-      <div class="col-6 col-lg-2 col-md-4">
+    <div class="container bg-white row mx-auto gx-5 gx-lg-5 gy-3 gy-md-3 px-lg-5 py-3" style="width:90%;height:auto">
+      <h5 class="text-center info-header">There's So Much You Can Do With Central LMS</h5>
+      <div class="col-6 col-lg-2 col-md-4 ms-lg-5 px-0">
         <div class="card border-0" style="width: 100%;font-size: 13px;">
           <div class="card-body px-0" >
             <h6 class="card-title">Reduce Training Cost</h6>
             <p class="card-text"style="font-size: 14px;">Cost of print media,Training Instructors, Facilities,Transportaion, Accomodation etc.</p>
           </div>
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
             <img src="img/reduce-training.png" alt="..." style="height: 90%; width: 60%;">
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2 col-md-4" >
+      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
         <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
             <img src="img/kodek-innovation-conduct-test.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
           </div>
           <div class="card-body px-0">
@@ -200,20 +198,20 @@
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2 col-md-4" >
+      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
         <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
           <div class="card-body px-0">
             <h6 class="card-title">Improve employee's effectiveness</h6>
             <p class="card-text">Enhance the integeration of employees to become effective members of the organization.</p>
           </div>
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
             <img src="img/onboard-new.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2 col-md-4" >
+      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
         <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
             <img src="img/smarter.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
           </div>
           <div class="card-body px-0">
@@ -222,13 +220,13 @@
           </div>
         </div>
       </div>
-      <div class="col-6 col-lg-2 col-md-4" >
+      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 " >
         <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
           <div class="card-body px-0">
             <h6 class="card-title">Increase revenue</h6>
             <p class="card-text">Better trained employees sell more and quicker.</p>
           </div>
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3" style="width: 150px;height: 150px;">
+          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
             <img src="img/kodek-innovations-increase-revenue.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
           </div>
         </div>
@@ -239,7 +237,7 @@
     <div class="container mt-5 row mx-auto">
       <h3 class="font-weight-bold">Features</h3>
       <hr>
-      <div class="col-4">
+      <div class="col-lg-4 col-12">
         <ul class="list-group ">
           <li class="list-group-item border-0 active">Course Management</li>
           <li class="list-group-item border-0">Learning delivery</li>
@@ -248,8 +246,106 @@
           <li class="list-group-item border-0">Technology</li>
         </ul>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8 mt-4">
+        <h4 class="font-weight-bold ms-5">
+          Course Management
+        </h4>
+        <ul class="list-group" style="font-size: 12px;">
+          <li class="list-group-item border-0 row d-flex font-weight-bold" style="width: 100%;">
+            <div class="col-2 col-lg-1 d-flex justify-content-center align-items-center">
+              <img src="img/comment (1).png" alt="" style="height: 30px;width: 30px;">
+            </div>
+            <div class="col-10 col-lg-8">
+              <h6>content Friendly</h6>
+              <p style="font-size: 13px;">Re-use youe best content on multiple courses.Import useful material from the web to enhance them better.</p>
+            </div>
+          </li>
+          <li class="list-group-item border-0 row d-flex font-weight-bold" style="width: 100%;">
+            <div class="col-2 col-lg-1 d-flex justify-content-center align-items-center">
+              <img src="img/comment (1).png" alt="" style="height: 30px;width: 30px;">
+            </div>
+            <div class="col-10 col-lg-8">
+              <h6>content Friendly</h6>
+              <p style="font-size: 13px;">Re-use youe best content on multiple courses.Import useful material from the web to enhance them better.</p>
+            </div>
+          </li>
+          <li class="list-group-item border-0 row d-flex font-weight-bold" style="width: 100%;">
+            <div class="col-2 col-lg-1 d-flex justify-content-center align-items-center">
+              <img src="img/comment (1).png" alt="" style="height: 30px;width: 30px;">
+            </div>
+            <div class="col-10 col-lg-8">
+              <h6>content Friendly</h6>
+              <p style="font-size: 13px;">Re-use youe best content on multiple courses.Import useful material from the web to enhance them better.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #EFEFEF; height: 300px;">
+    <div class="container mx-auto row gy-3 h-75 mt-4 py-4 px-0" style="width: 69%;">
+      <div class="col-lg-4 col-6" style="height: 90px;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-3" style="width: 90%;height: 80%;border: 1px solid #707070;">
+          <img src="img/microsoft-teams-logo.png" alt="" class="mx-auto">
+        </div>
+      </div>
+      <div class="col-lg-4 col-6" style="height: 90px;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-4" style="width: 90%;height: 80%;border: 1px solid #707070;">
+          <img src="img/Zoom-Logo-Free-PNG-Image.png" alt="" class="mt-2">
+        </div>
+      </div>
+      <div class="col-lg-4 col-6" style="height: 90px;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-3" style="width: 90%;height: 80%;border: 1px solid #707070;">
+          <img src="img/skype.png" alt=""class="mx-auto">
+        </div>
+      </div>
+      <div class="col-lg-4 col-6" style="height: 90px;">
+        <div class="mx-auto bg-white d-flex justify-content-center p-3 align-items-center" style="width: 90%;height: 80%;border: 1px solid #707070;">
+          <img src="img/bluejeans-logo.png" alt="" class="mx-auto">
+        </div>
+      </div>
+      <div class="col-lg-4 col-6" style="height: 90px;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-3" style="width: 90%;height: 80%;border: 1px solid #707070;">
+          <img src="img/TeamViewer-Logo.png" alt="" class="mx-auto">
+        </div>
+      </div>
+      <div class="col-lg-4 col-6" style="height: 90px;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-3" style="width: 90%;height: 80%;border: 1px solid #707070;">
+          <img src="img/go-to-meeting-logo.png" alt="" class="mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color:#F5F5F5; height:700px">
+    <div class="container row mx-auto" style="width: 90%;height: 100%;">
+      <div class="col-lg-4 col-12 h-100">
+        <p class="expert mt-5">
+          In an ever growing global market, employees are a great asset but they must have the skills and knowledge to be able to keep driving your business forward.
+        </p>
 
+        <!--div class="submit mb-1 mb-lg-3 text-bold rounded btn col-9" style="height: 30px;width: 180px;"-->
+          <a href="#" class="btn submit mb-1 mb-lg-3 text-bold rounded" style="height: 36px;width: 180px;">
+            Talk to an expert
+          </a>
+        <!--/div-->
+
+      </div>
+      <div class="col-lg-8 col-12 h-100">
+        <div class="mx-auto h-100 border row p-1" style="width: 80%;">
+
+          <div class="col-4 rounded-circle" style="width: 150px;height: 150px;">
+            <div style="margin-left: 30px;margin-top:30px;z-index: 1;position: absolute;width: 400px;height: 300px;">
+              <img src="img/young-businessman-1.png" alt=""></div>
+          </div>
+          <div class="col-4 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-4 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-4 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-6 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-4 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-4 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-4 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+          <div class="col-6 rounded-circle" style="width: 90px;height: 90px; background-color: #FF9F00;"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -285,14 +381,15 @@
       AOS.init();
       $(function(){
         $(".hero-title").typed({
-          strings: ["Promote Individual Learning Culture In Your Organization. "],
+          strings: ["Promote Individual Learning Culture In Your Organization "],
           typeSpeed: 45,
-          showCursor: false
+          showCursor: false,
+          callback: showThis()
         });
-        /*function showThis(){
+        function showThis(){
 
           $(".span p").typed({
-              strings: ["...allow employess learn at their own pace."],
+              strings: ["...allow employees learn at their own pace."],
               backDelay: 60,    
               typeSpeed: 30,
               showCursor:false,
@@ -300,7 +397,7 @@
               loop: true, 
           });
 
-        }*/
+        }
       });
     </script>
 </body>

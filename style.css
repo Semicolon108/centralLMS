@@ -189,7 +189,7 @@
 }
 
 input{
-  height: 1.8rem;
+  
   font-size: 15px;
   line-height: 80%;
 }
@@ -247,7 +247,7 @@ input{
   }
   .right-side-hero{
     height: 200px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 24px;
   }
   .resize{
@@ -291,7 +291,7 @@ input{
     margin-left: 180px;
     max-width: 390px;
     margin-top: -9px;
-    height: 330px;
+    height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.84;
@@ -346,7 +346,46 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: -180px;
+
+    left: 0px;
+    width: 100vw;
+    height: 450px;
+  }
+}
+
+@media (min-width: 779px) {
+  .form{
+    margin-left: 150px;
+    margin-top: 90px;
+    width: 330px;
+    height: auto;
+    background: #9B9B9B 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.84;
+  }
+  .resize{
+    height: 390px;
+    margin-left: 20px;
+  }
+  .right-side-hero{
+    margin-top:30px;
+    height: 240px;
+  }
+  
+  .right-side-hero h1{
+    font-size: 2.1rem;
+  }
+  form{
+    margin-top: 0px !important;
+  }
+  .span{
+    margin-top: 240px;
+  }
+  #section2 {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: -270px;
 
     left: 0px;
     width: 100vw;
@@ -357,16 +396,19 @@ input{
 @media (min-width: 1200px) {
   .form{
     margin-left: 300px;
-    margin-top: 240px;
+   
     width: 540px;
     height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
-    opacity: 0.84;
+    opacity: 1;
   }
 
   .right-side-hero h1{
-    font-size: 3rem;
+    font-size: rem;
+  }
+  .right-side-hero{
+    margin-top: 90px;
   }
   
   .resize{
@@ -376,7 +418,7 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: 0px;
+    margin-top: -270px;
     left: 0px;
     width: 100vw;
     height: 450px;
