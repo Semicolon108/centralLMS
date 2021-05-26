@@ -203,7 +203,7 @@ input{
     width: ;
     height: auto;
     margin: auto;
-    margin-top: 12px;
+
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.84;
@@ -225,7 +225,6 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -90px;
     left: 0px;
     width: 100vw;
     height: auto;
@@ -267,7 +266,6 @@ input{
   .form{
     margin-left: 90px;
     max-width: 240px;
-    margin-top: 54px;
     height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
@@ -290,7 +288,6 @@ input{
   .form{
     margin-left: 180px;
     max-width: 390px;
-    margin-top: -9px;
     height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
@@ -307,7 +304,6 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -90px;
     left: 0px;
     width: 100vw;
     height: 450px;
@@ -318,7 +314,6 @@ input{
 @media (min-width: 702px) {
   .form{
     margin-left: 150px;
-    margin-top: 20px;
     width: 330px;
     height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
@@ -346,7 +341,6 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -180px;
 
     left: 0px;
     width: 100vw;
@@ -357,7 +351,6 @@ input{
 @media (min-width: 779px) {
   .form{
     margin-left: 150px;
-    margin-top: 90px;
     width: 330px;
     height: auto;
     background: #9B9B9B 0% 0% no-repeat padding-box;
@@ -385,7 +378,6 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -270px;
 
     left: 0px;
     width: 100vw;
@@ -418,7 +410,7 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: -270px;
+    margin-top: 0px;
     left: 0px;
     width: 100vw;
     height: 450px;
