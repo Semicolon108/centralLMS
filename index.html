@@ -385,7 +385,7 @@
                         </div>
                         <button class="btn btn-sm rounded-pill text-white" id="pop-1" style="background-color: #4D6303;">Contact us</button>
                         <!--div id="qoute-info" style="display: none;"-->
-                          <p class="mt-5 fs-4 qoute-info d-none">
+                          <p class="mt-5 fs-4 d-none qoute-info">
                             In 2 an ever growing global market, employees are a great asset but they must have the skills and knowledge to be able to keep driving your business forward.
                           </p>
                         <!--/div-->
@@ -538,10 +538,11 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         })
       }*/
       $("#pop-1").click(function() {
-          let info = $("#pop-1").closest(".qoute-info").text();
-          console.log($("#pop-1").closest(".qoute-info").text());
-         // $("#staticBackDrop").modal("hide");
-          //$("#static").modal("show");
+          let info = $(this).parent().children(".qoute-info").text().trim("");
+          console.log(info);
+          //alert($(this).parent().children(".qoute-info").text())
+          $("#staticBackDrop").modal("hide");
+          $("#static").modal("show");
         })
       })
       AOS.init();
