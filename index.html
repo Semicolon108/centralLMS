@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="customstyle.css">
     <style>
         #section1 {
-          height: calc(100vh - 57px);
+          height: calc(100vh - 50px);
           background: transparent url('img/dm98fhoPgzbjittCqEEZcC.png') 0% 0% no-repeat padding-box;
           background-size: contain;
           opacity: 1;
@@ -72,7 +72,10 @@
 
         .info-header{
           font-weight: bolder;
-          font-size: 2vw;
+          font-size: clamp(0.9rem, 1.5vw, 5rem);
+        }
+        .content{
+          font-size: clamp(0.8rem, 1.2vw, 1.5rem);
         }
         .btn:focus, .btn:active:focus, .btn.active:focus { 
           outline: none ! important; 
@@ -123,14 +126,14 @@
         </div>
     </div>
 </header>
-  <section id="section1" class="row col-12 bg-white p-lg-5 p-2 h-md-60 h-lg-75 h-70">
+  <div id="section1" class="row col-12 bg-white p-lg-5 p-2">
     <div class="col-6 col-lg-4 col-md-4 ms-md-5 ms-lg-5 right-side-hero">
       <!--div class="col-6 border col-lg-6 col-md-7 ms-md-1 ms-lg-5 right-side-hero mt-lg-0 mt-4"-->
         <h1 class="hero-title"></h1>
       <!--/div-->
-      <div class="col-12 col-lg-12 col-md-3 ms-2 span text-center">
+      <!--div class="col-12 col-lg-12 col-md-3 ms-2 span text-center">
         <p class="font-weight-bold mt-1 mt-lg-5 mt-md-5 text-muted" style="font-size: 16px;"></p>
-      </div>
+      </div-->
     </div>
     <div class="col-12 col-lg-5 col-md-4 resize">
       <div class="form d-flex justify-content-center row py-3 px-1 mx-auto" data-aos="zoom-in" data-aos-delay="90"
@@ -165,101 +168,95 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="bg-light py-5" id="section2">
-    <div class="container h-auto mx-auto mt-5 py-3 row px-4">
-        <div class="card border-0 mb-3 bg-light mt-3 h-75" style="max-width: 100%;">
-          <div class="row g-0">
-            <div class="col-md-12 col-12 col-lg-7">
-              <div class="card-body">
-                <h3 class="info-header mb-5 font-weight-bold">Central Learning Management System</h3>
+  </div>
+    <div class="container mx-auto row py-3 px-4" style="height: auto;margin-top: 54px;">
+        <div class="col-12 col-lg-7 mt-3" style="height: 300px;">
+          <h3 class="info-header mb-5 font-weight-bold">Central Learning Management System</h3>
                 <p class="card-text">Give your learners on-the-go access to training, assessments and other corperate information anywhere, anytime on mobile devices.</p>
                 <br>
                 <p class="card-text">Central Mobile App is integerated with the web-based Central LMS. All training activities conducted on mobile devices are synchronized with the LMS.This means Learners can start a training on the LMS and complete it the mobile app and vice versa.</p>
                 <p class="card-text">Central Mobile App Supports Android and iOS Platform</p>
-              </div>
-            </div>
-            <div class="col-md-12 col-12 col-lg-5 d-flex justify-content-center align-items-center" style="background: transparent url('img/Depositphotos_69202269_l-2015.png') 0% 0% no-repeat padding-box;">
-              <span class="rounded-circle" style="background: transparent url('img/youtube (1).png') 0% 0% no-repeat padding-box;opacity: 1;height:150px;width:150px"></span>
-            </div>
-          </div>
+        </div>
+        <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center mt-3" style="height: 300px;background: transparent url('img/Depositphotos_69202269_l-2015.png') 0% 0% no-repeat padding-box;">
+          <span class="rounded-circle" style="background: transparent url('img/youtube (1).png') 0% 0% no-repeat padding-box;opacity: 1;height:150px;width:150px"></span>
         </div>
     </div>
-  </section>
-  <section class="mt-5" style="background-color: #F9F9F9;">
-    <div class="container bg-white row mx-auto gx-5 gx-lg-5 gy-3 gy-md-3 px-lg-5 py-3" style="width:90%;height:auto">
-      <h5 class="text-center info-header">There's So Much You Can Do With Central LMS</h5>
-      <div class="col-6 col-lg-2 col-md-4 ms-lg-5 px-0">
-        <div class="card border-0" style="width: 100%;font-size: 13px;">
-          <div class="card-body px-0" >
-            <h6 class="card-title">Reduce Training Cost</h6>
-            <p class="card-text"style="font-size: 14px;">Cost of print media,Training Instructors, Facilities, Transportaion, Accomodation etc.</p>
-          </div>
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
-            <img src="img/reduce-training.png" alt="..." style="height: 90%; width: 60%;">
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
-        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
-            <img src="img/kodek-innovation-conduct-test.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
-          </div>
-          <div class="card-body px-0">
-            <h6 class="card-title">Conduct test for prospective hires</h6>
-            <p class="card-text">Do more than just training,use central LMS to conduct training for job applicants during recruitment.</p>
+    <div class="container mt-3" style="height: auto;width: 100%;">
+      <div class="row mx-auto gy-3 bg-white py-3 px-1 h-100 gx-5 gx-lg-5 gy-3 gy-md-3 w-100" style="background-color: #F9F9F9;">
+        <h5 class="text-center info-header">There's So Much You Can Do With Central LMS</h5>
+        <div class="col-6 col-lg-2 col-md-4 ms-lg-5 px-0">
+          <div class="card border-0" style="width: 100%;font-size: 13px;">
+            <div class="card-body px-2" >
+              <h6 class="card-title">Reduce Training Cost</h6>
+              <p class="card-text" style="font-size: 14px;">Cost of print media,Training Instructors, Facilities, Transportaion, Accomodation etc.</p>
+            </div>
+            <div class="ms-4 ms-lg-0 bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
+              <img src="img/reduce-training.png" alt="..." style="height: 90%; width: 60%;">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
-        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
-          <div class="card-body px-0">
-            <h6 class="card-title">Improve employee's effectiveness</h6>
-            <p class="card-text">Enhance the integeration of employees to become effective members of the organization.</p>
-          </div>
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
-            <img src="img/onboard-new.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
-        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
-            <img src="img/smarter.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
-          </div>
-          <div class="card-body px-0">
-            <h6 class="card-title">Smarter, well-informed workforce</h6>
-            <p class="card-text">Achieve a knowledgable workforce by making training available at all times.</p>
+        <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
+          <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+            <div class="ms-4 ms-lg-0 bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
+              <img src="img/kodek-innovation-conduct-test.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+            </div>
+            <div class="card-body px-2">
+              <h6 class="card-title">Conduct test for prospective hires</h6>
+              <p class="card-text">Do more than just training,use central LMS to conduct training for job applicants during recruitment.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 col-lg-2 col-md-4 ms-lg-3 " >
-        <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
-          <div class="card-body px-0">
-            <h6 class="card-title">Increase revenue</h6>
-            <p class="card-text">Better trained employees sell more and quicker.</p>
+        <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
+          <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+            <div class="card-body px-2">
+              <h6 class="card-title">Improve employee's effectiveness</h6>
+              <p class="card-text">Enhance the integeration of employees to become effective members of the organization.</p>
+            </div>
+            <div class="ms-4 ms-lg-0 bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
+              <img src="img/onboard-new.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+            </div>
           </div>
-          <div class="card-img-top bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
-            <img src="img/kodek-innovations-increase-revenue.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 ms-lg-3 px-0" >
+          <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+            <div class="ms-4 ms-lg-0 bg-white d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
+              <img src="img/smarter.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+            </div>
+            <div class="card-body px-2">
+              <h6 class="card-title">Smarter, well-informed workforce</h6>
+              <p class="card-text">Achieve a knowledgable workforce by making training available at all times.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 ms-lg-3 " >
+          <div class="card border-0 h-100"  style="width: 100%;font-size: 13px;">
+            <div class="card-body px-2">
+              <h6 class="card-title">Increase revenue</h6>
+              <p class="card-text">Better trained employees sell more and quicker.</p>
+            </div>
+            <div class="ms-3 ms-lg-0 bg-white border d-flex justify-content-center align-items-center shadow py-3 px-0" style="width: 150px;height: 150px;">
+              <img src="img/kodek-innovations-increase-revenue.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section  style="background-color: #F5F5F5;width:100vw;height:auto">
-    <div class="container mt-5 row mx-auto">
-      <h3 class="font-weight-bold">Features</h3>
+  <!--/section-->
+  <!--section  style="background-color: #F5F5F5;width:100vw;height:auto"-->
+    <div class="container" style="background-color: #F5F5F5;width:100vw;">
+      <div class="mt-5 row mx-auto" style="height: auto;">
+        <h3 class="font-weight-bold">Features</h3>
       <hr>
-      <div class="col-lg-4 col-12">
+      <div class="col-lg-4 col-12 col-md-6">
         <ul class="list-group ">
-          <li class="list-group-item border-0 active">Course Management</li>
-          <li class="list-group-item border-0">Learning delivery</li>
-          <li class="list-group-item border-0">Enterprise ready</li>
-          <li class="list-group-item border-0">Ecommerce</li>
-          <li class="list-group-item border-0">Technology</li>
+          <li class="list-group-item border-0 content active">Course Management</li>
+          <li class="list-group-item border-0 content">Learning delivery</li>
+          <li class="list-group-item border-0 content">Enterprise ready</li>
+          <li class="list-group-item border-0 content">Ecommerce</li>
+          <li class="list-group-item border-0 content">Technology</li>
         </ul>
       </div>
-      <div class="col-12 col-lg-8 mt-4">
+      <div class="col-12 col-lg-8 mt-4 col-md-6">
         <h4 class="font-weight-bold ms-5">
           Course Management
         </h4>
@@ -293,43 +290,44 @@
           </li>
         </ul>
       </div>
+      </div>
     </div>
-  </section>
-  <section style="background-color: #EFEFEF; height: 300px;">
+  <!--/section-->
+  <section style="background-color: #EFEFEF; height: auto;">
     <div class="container mx-auto row gy-3 h-75 mt-4 py-4 px-0" style="width: 69%;">
       <div class="col-lg-4 col-6" style="height: 90px;">
-        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-lg-5 p-2" style="width: 90%;height: 100%;border: 1px solid #707070;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-lg-5 px-2" style="width: 90%;height: 100%;border: 1px solid #707070;">
           <img src="img/microsoft-teams-logo.png" alt="" class="mx-auto">
         </div>
       </div>
       <div class="col-lg-4 col-6" style="height: 90px;">
-        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-5" style="width: 90%;height: 100%;border: 1px solid #707070;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-lg-5 px-2" style="width: 90%;height: 100%;border: 1px solid #707070;">
           <img src="img/Zoom-Logo-Free-PNG-Image.png" alt="" class="mt-2">
         </div>
       </div>
       <div class="col-lg-4 col-6" style="height: 90px;">
-        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-5" style="width: 90%;height: 100%;border: 1px solid #707070;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-lg-5 px-2" style="width: 90%;height: 100%;border: 1px solid #707070;">
           <img src="img/skype.png" alt=""class="mx-auto">
         </div>
       </div>
       <div class="col-lg-4 col-6" style="height: 90px;">
-        <div class="mx-auto bg-white d-flex justify-content-center p-5 align-items-center" style="width: 90%;height: 100%;border: 1px solid #707070;">
+        <div class="mx-auto bg-white d-flex justify-content-center p-lg-5 px-2 align-items-center" style="width: 90%;height: 100%;border: 1px solid #707070;">
           <img src="img/bluejeans-logo.png" alt="" class="mx-auto">
         </div>
       </div>
       <div class="col-lg-4 col-6" style="height: 90px;">
-        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-5" style="width: 90%;height: 100%;border: 1px solid #707070;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-lg-5 px-2" style="width: 90%;height: 100%;border: 1px solid #707070;">
           <img src="img/TeamViewer-Logo.png" alt="" class="mx-auto">
         </div>
       </div>
       <div class="col-lg-4 col-6" style="height: 90px;">
-        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-5" style="width: 90%;height: 100%;border: 1px solid #707070;">
+        <div class="mx-auto bg-white d-flex justify-content-center align-items-center p-lg-5 px-2" style="width: 90%;height: 100%;border: 1px solid #707070;">
           <img src="img/go-to-meeting-logo.png" alt="" class="mx-auto">
         </div>
       </div>
     </div>
   </section>
-  <section style="background-color:#F5F5F5; height:700px">
+  <section style="background-color:#F5F5F5; height:auto">
     <div class="container row mx-auto" style="width: 90%;height: 100%;">
       <div class="col-lg-4 col-12 h-auto mt-5 pt-5">
         <p class="expert mt-5 fs-4">
@@ -343,16 +341,16 @@
         <!--/div-->
 
       </div>
-      <div class="col-lg-8 col-12 p-0">
+      <div class="col-lg-8 col-12 p-2">
         <div class="mx-auto col-11 h-75 row p-lg-1 px-0 mt-5 h-lg-50 col-lg-9 col-md-12">
           <img src="./img/Group 14.png" alt="" class="img-fluid ms-lg-5">
         </div>
       </div>
     </div>
   </section>
-  <section style="background-color: #EFEFEF;height: 450px;">
-    <div class="col-lg-6 col-12 h-auto mt-5 pt-5 mx-auto">
-      <p class="expert mt-5 fs-4">
+  <section class="border" style="background-color: #EFEFEF;height: 360px;">
+    <div class="col-lg-6 col-8 h-auto my-auto py-4 mx-auto">
+      <p class="expert fs-4">
         In an ever growing global market, employees are a great asset but they must have the skills and knowledge to be able to keep driving your business forward.
       </p>
 
@@ -383,8 +381,14 @@
                         <h4 class="info-header">Cloud-Based</h4>
                         <p style="margin-top: -9px;">(software-as-a-service)</p>
                         <div style="margin-top: -24px;height: 150px;">
-                          <img src="./img/cloud-network.png" alt="" class="h-100 w-50 mx-auto py-3"></div>
-                        <button class="btn btn-sm rounded-pill btn-success">Contact us</button>
+                          <img src="./img/cloud-network.png" alt="" class="h-100 w-50 mx-auto py-3">
+                        </div>
+                        <button class="btn btn-sm rounded-pill text-white" id="pop-1" style="background-color: #4D6303;">Contact us</button>
+                        <!--div id="qoute-info" style="display: none;"-->
+                          <p class="mt-5 fs-4 qoute-info d-none">
+                            In 2 an ever growing global market, employees are a great asset but they must have the skills and knowledge to be able to keep driving your business forward.
+                          </p>
+                        <!--/div-->
                       </div>
                       <div class="h-50 border" style="background-color: #E9E9E9;"></div>
                     </div>
@@ -393,9 +397,9 @@
                     <div class="card-body">
                       <div class="h-75 border py-2 bg-white text-center">
                         <h5 class="info-header">On-site-developement</h5>
-                        <div style="height: 150px;" class="border">
+                        <div style="margin-top: 18px;height: 150px;">
                           <img src="./img/data.png" alt="" class="h-100 w-50 mx-auto py-3"></div>
-                        <button class="btn btn-sm rounded-pill text-white" style="background-color: #4D6303;">Contact us</button>
+                        <button class="btn btn-sm rounded-pill text-white" id="pop-2" style="background-color: #4D6303;">Contact us</button>
                       </div>
                       <div class="h-50 border" style="background-color: #E9E9E9;"></div>
                     </div>
@@ -420,41 +424,41 @@
   <footer style="background-color: #000000;height: auto;">
     <div class="container row px-0 mx-auto h-100 w-lg-75 w-100">
       <div class="col-lg-7 col-md-7 col-12 h-100 py-3 px-lg-5">
-        <h4 class="info-header text-white">Contact Information</h4>
+        <h4 class="info-header text-white ms-3 ms-lg-0 ms-md-0">Contact Information</h4>
         <ul class="list-group" style="font-size: 12px;">
           <li class="list-group-item black border-0 row d-flex font-weight-bold" style="background-color:black;">
             <div class="col-4 col-lg-3">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="18" height="18"
+                width="15" height="15"
                 viewBox="0 0 172 172"
-                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#000000"></path><g fill="#ffffff"><path d="M86,1.24038c-28.52885,0 -51.68269,23.15385 -51.68269,51.68269c0,28.52885 45.06731,79.46214 45.06731,117.83654h13.23077c0,-38.27103 45.06731,-91.60757 45.06731,-117.83654c0,-28.52885 -23.15385,-51.68269 -51.68269,-51.68269zM86,74.11298c-11.70613,0 -21.1899,-9.50962 -21.1899,-21.1899c0,-11.68029 9.48378,-21.1899 21.1899,-21.1899c11.70613,0 21.1899,9.48378 21.1899,21.1899c0,11.70613 -9.48378,21.1899 -21.1899,21.1899z"></path></g></g></svg>
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#000000"></path><g fill="#ffffff"><path d="M86,1.24038c-28.52885,0 -51.68269,23.15385 -51.68269,51.68269c0,28.52885 45.06731,79.46214 45.06731,117.83654h13.23077c0,-38.27103 45.06731,-91.60757 45.06731,-111.83654c0,-28.52885 -23.15385,-51.68269 -51.68269,-51.68269zM86,74.11298c-11.70613,0 -21.1899,-9.50962 -21.1899,-21.1899c0,-11.68029 9.48378,-21.1899 21.1899,-21.1899c11.70613,0 21.1899,9.48378 21.1899,21.1899c0,11.70613 -9.48378,21.1899 -21.1899,21.1899z"></path></g></g></svg>
             </div>
             <div class="col-7 col-lg-8 text-white">
-              <h5 class="font-weight-normal" style="margin-left: -117px;font-size: 12px">100, opebi road, Ikeja Lagos.</h5>
+              <h5 class="font-weight-normal mt-1" style="margin-left: -111px;font-size: 12px">100, opebi road, Ikeja Lagos.</h5>
             </div>
           </li>
           
           <li class="list-group-item black border-0 row d-flex font-weight-bold" style="background-color:black;">
             <div class="col-4 col-lg-3">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="18" height="18"
+                width="15" height="15"
                 viewBox="0 0 172 172"
                 style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#000000"></path><path d="" fill="none"></path><g fill="#ffffff"><path d="M134.2675,161.68c-0.05375,0 -0.1075,0 -0.16125,0c-25.85375,-0.84656 -56.14187,-25.9075 -77.01031,-46.78937c-20.89531,-20.88188 -45.95625,-51.18344 -46.7625,-76.91625c-0.29562,-9.03 21.86281,-25.08781 22.09125,-25.24906c5.75125,-4.00438 12.13406,-2.58 14.75438,1.04812c1.77375,2.45906 18.57062,27.90969 20.39812,30.79875c1.89469,2.99656 1.6125,7.45781 -0.7525,11.9325c-1.30344,2.48594 -5.63031,10.09156 -7.65937,13.63906c2.19031,3.1175 7.98187,10.76344 19.94125,22.72281c11.97281,11.95937 19.60531,17.76437 22.73625,19.95469c3.5475,-2.02906 11.15312,-6.35594 13.63906,-7.65937c4.4075,-2.33813 8.84187,-2.63375 11.86531,-0.77938c3.09063,1.89469 28.47406,18.77219 30.81219,20.39813c1.96187,1.38406 3.225,3.74906 3.48031,6.50375c0.24188,2.78156 -0.61812,5.72437 -2.40531,8.29094c-0.14781,0.215 -16.0175,22.10469 -24.96688,22.10469z"></path></g></g></g></svg>
             </div>
             <div class="col-7 col-lg-8 text-white">
-              <h5 class="font-weight-normal" style="margin-left: -117px; font-size: 12px;">+234 8134384128, +234 8055801534, +234 9028551188</h5>
+              <h5 class="font-weight-normal mt-1" style="margin-left: -111px; font-size: 12px;">+234 8134384128, +234 8055801534, +234 9028551188</h5>
             </div>
           </li>
 
           <li class="list-group-item black border-0 row d-flex font-weight-bold" style="background-color:black;">
             <div class="col-4 col-lg-3">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="18" height="18"
+                width="15" height="15"
                 viewBox="0 0 172 172"
                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#000000"></path><g fill="#ffffff"><path d="M14.54609,34.4l64.63438,60.32317c3.82413,3.5776 9.82066,3.5776 13.63906,0l64.63438,-60.32317zM5.73333,41.85781v95.74219h160.53333v-95.74219l-65.61979,61.24141c-4.1108,3.8356 -9.37794,5.75573 -14.64688,5.75573c-5.26893,0 -10.53608,-1.92013 -14.64688,-5.75573z"></path></g></g></svg>
             </div>
             <div class="col-7 col-lg-8 text-white">
-              <h5 class="font-weight-normal" style="margin-left: -117px;font-size: 12px">info@kodekinnovations.com</h5>
+              <h5 class="font-weight-normal mt-1" style="margin-left: -111px;font-size: 12px">info@kodekinnovations.com</h5>
             </div>
           </li>
         </ul>
@@ -482,6 +486,23 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       </div>
     </div>
   </footer>
+  <div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content mx-auto w-auto w-75">
+        <!--div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div-->
+        <div class="modal-body px-0 py-5 bg">
+          <div class="modal-header border-0" style="margin-top: -54px;">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="container d-flex justify-content-between gx-5 h-100 w-lg-75 w-100 mx-auto px-0 px-lg-5 py-3">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
   <!-- Popper js -->
   <script src="js/popper.min.js"></script>
@@ -509,7 +530,19 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       document.addEventListener("readystatechange", () => {
-        console.log(window.innerWidth);
+       // console.log(window.innerWidth);
+        /*const popUp = (id) => {
+        $(id).click(() => {
+          $("#staticBackDrop").hide();
+          $("#static").show();
+        })
+      }*/
+      $("#pop-1").click(function() {
+          let info = $("#pop-1").closest(".qoute-info").text();
+          console.log($("#pop-1").closest(".qoute-info").text());
+         // $("#staticBackDrop").modal("hide");
+          //$("#static").modal("show");
+        })
       })
       AOS.init();
       $(function(){
@@ -532,6 +565,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
         }
       });
+
     </script>
 </body>
 </html>

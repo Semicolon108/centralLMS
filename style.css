@@ -216,7 +216,6 @@ input{
   .resize{
     height: 360px;
     margin-left: 27px;
-    bord
   }
   .span{
     height: 60px;
@@ -232,11 +231,11 @@ input{
 }
 @media (min-width: 500px) {
   .form{
-    max-width: 90%;
-    height: auto;
+    max-width: 60%;
+    height: 100%;
   
     margin-left: 27px;
-    margin-top: 24px;
+    
     background: #9B9B9B 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 0.84;
@@ -259,6 +258,7 @@ input{
     left: 0px;
     width: 100vw;
     height: auto;
+    margin-top: 270px;
   }
 }
 
@@ -307,6 +307,7 @@ input{
     left: 0px;
     width: 100vw;
     height: 450px;
+    margin-top: 120px;
   }
 }
 
@@ -410,7 +411,6 @@ input{
   #section2 {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-top: 0px;
     left: 0px;
     width: 100vw;
     height: 450px;
