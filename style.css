@@ -245,7 +245,7 @@ input{
   }
   .right-side-hero{
     height: 200px;
-    margin-top: 20px;
+    margin-top: -30px;
     margin-left: 24px;
   }
   .resize{
@@ -260,6 +260,7 @@ input{
     height: auto;
     margin-top: 270px;
   }
+  
 }
 
 @media (min-width: 639px) {
