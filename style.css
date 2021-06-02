@@ -200,7 +200,7 @@ input{
     overflow-x: hidden;
   }
   .form{
-    width: ;
+    width: 75%;
     height: auto;
     margin: auto;
 
@@ -260,7 +260,9 @@ input{
     height: auto;
     margin-top: 270px;
   }
-  
+  .iframe{
+    height: 300px;
+  }
 }
 
 @media (min-width: 639px) {
@@ -309,6 +311,9 @@ input{
     width: 100vw;
     height: 450px;
     margin-top: 120px;
+  }
+  .iframe{
+    height: 450px;
   }
 }
 
@@ -385,6 +390,9 @@ input{
     width: 100vw;
     height: 450px;
   }
+  .iframe{
+    height: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -415,6 +423,9 @@ input{
     left: 0px;
     width: 100vw;
     height: 450px;
+  }
+  .iframe{
+    height: 600px;
   }
 }
 
